@@ -1,0 +1,25 @@
+##What is the VO2Max estimator
+The VO2Max estimator is an app developed with Shiny aimed to measure the level of a person's cardiorespiratory fitness (CRT) using a non exercise model. The CRT is a strong 
+predictor of many risk factors such as overweight, high blood pressure and mortality.
+
+##How it works
+The VO2Max estimator implements the non exercize model proposed by George, Stone, and Burkett (1997). It's estimation is made starting from the measurement of the following
+variables:
+
+* sex
+* body mass index
+* self-report about physical activity (3 items)
+
+The following formula is used to calculate the index:
+
+44.895 + (7.042 * sex) - (0.823 * bmi) + (0.738 * physical_activity_1 * 1.0) + physical_activity_2 * 1.0) + (0.688 * physical_activity_3)
+
+The calculated index is compared with the normative data about VO2Max (Heywood, 1998; available on <http://www.machars.net/v02max.htm>) in order to provide users a qualitative evaluation of their level of fit.
+
+##How to use it
+Users have to fill in the questionnaire on the left area of the webpage. The estimated Vo2Max index and the qualitative evaluation will be displayed reactively in the right area of the webpage.
+
+##References
+
+* George, J. D., Stone, W. J., & Burkett, L. N. (1997). *Non-exercise VO2max estimation for physically active college students*. Medicine and science in sports and exercise, 29(3), 415-423.
+* Heywood, V. (1998). *The physical fitness specialist certification manual*. Dallas (TX): The Cooper Institute of Aerobics Research.
