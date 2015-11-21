@@ -2,7 +2,7 @@ library(shiny)
 
 shinyUI(fluidPage(
     titlePanel("VO2Max estimator"),
-    a("Click here for the documentation", href = "./documentation.html"),
+    a("Click here for the documentation", href = "./documentation.html", target = "_blank"),
     
     fluidRow(
         column(7, wellPanel(
